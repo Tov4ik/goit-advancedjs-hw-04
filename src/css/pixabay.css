@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  color: #2e2f42;
+}
+
+.page-header {
+  display: flex;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.search-input {
+  width: 272px;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+  outline: none;
+  transition: border-color 200ms ease;
+}
+
+.search-input::placeholder {
+  color: #808080;
+}
+
+.search-input:hover {
+  border-color: #4e75ff;
+}
+
+.search-input:focus {
+  border-color: #4e75ff;
+}
+
+.search-btn {
+  height: 40px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4e75ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: background-color 200ms ease;
+}
+
+.search-btn:hover {
+  background-color: #6c8cff;
+}
+
+button {
+  font-family: inherit;
+}
+
+.loader {
+  text-align: center;
+  font-size: 16px;
+  color: #2e2f42;
+  margin: 16px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px 40px;
+  list-style: none;
+}
+
+.gallery-item {
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.gallery-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.gallery-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  margin: 0;
+  list-style: none;
+}
+
+.gallery-info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.gallery-info-label {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: #2e2f42;
+  text-transform: capitalize;
+}
+
+.gallery-info-value {
+  margin: 0;
+  font-size: 14px;
+  color: #2e2f42;
+}
+
+.load-more-btn {
+  display: block;
+  margin: 0 auto 40px;
+  padding: 8px 16px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4e75ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: background-color 200ms ease;
+}
+
+.load-more-btn:hover {
+  background-color: #6c8cff;
+}
