@@ -78,10 +78,6 @@ button {
   margin: 16px 0;
 }
 
-.hidden {
-  display: none;
-}
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -158,4 +154,8 @@ button {
 
 .load-more-btn:hover {
   background-color: #6c8cff;
+}
+
+.hidden {
+  display: none;
 }
